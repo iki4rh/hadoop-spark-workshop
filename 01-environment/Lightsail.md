@@ -127,20 +127,20 @@ ssh -i LightsailDefaultKey-eu-central-1.pem ubuntu@18.196.124.212
 
 Before you can use this option, you either have to open the ports on the Firewall or create an SSH tunnel, documented under **Enable using the Services from your client**.
 
-After the stack is started, you can use your web browser (best is Chrome) to access the terminal in the ligthsail environment. Navigate to <http://18.196.124.212:3001> (replace the IP address by the IP address your IP address and you should see a back terminal window asking to enter the username to connect:
+After the stack is started, you can use your web browser (best is Chrome) to access the terminal in the ligthsail environment. Navigate to <http://18.196.124.212:3001> (replace the IP address with your IP address and you should see a black terminal window asking to enter the username to connect:
 
 ![Alt Image Text](./images/wetty-1.png "Lightsail Homepage")
 
-Enter `ubuntu` for the **username** and enter value you have chosen as your password when creating the lightsail environment (when specifying the **Launch Script**) for the **password** and you should be able to connect. 
+Enter `ubuntu` for the **username** and enter the value you have choosen as your password when creating the lightsail environment (when specifying the **Launch Script**) for the **password** and you should be able to connect. 
 
 ![Alt Image Text](./images/wetty-2.png "Lightsail Homepage")
 
 ## Enable using the Services from your client
 
-For accessing the services in the cloud, we have to options:
+For accessing the services in the cloud, we have two options:
 
-* open the ports on the firewall (with the option to only allow a certain client to connect)
-* Create an SSH Tunnel
+* Open the ports on the firewall (with the option to only allow a certain client to connect)
+* Create an SSH tunnel
 
 Due to the fact, that the lightsail instance is exposed to the public internet, opening the ports is not the best idea. But if you only open it restricted to your IP address the risk can be minimised. 
 
@@ -168,7 +168,7 @@ Click on **Create** to save this new Firewall rule and it should be added to the
 
 ![Alt Image Text](./images/lightsail-image-networking-add-firewall-rule-2.png "Lightsail Homepage")
 
-Your instance is now ready to use. Complete the post installation steps documented the [here](README.md).
+Your instance is now ready to use. Complete the post installation steps documented [here](README.md).
 
 ### 2) Create an SSH Tunnel as a Socks Proxy
 
@@ -242,7 +242,6 @@ You can now reach the services on Lightsail using the localhost address. For exa
 #### Using Mac OS-X
 
 **a). Download the SSH Key of the Lightroom instance**
-
 Download the key from the AWS console by choosing **Account** on the top navigation bar and again choose **Account** from the drop-down menu. Navigate to the **SSH Keys** tab. 
 
 ![Alt Image Text](./images/ssh-keys-download.png "Lightsail Homepage")
